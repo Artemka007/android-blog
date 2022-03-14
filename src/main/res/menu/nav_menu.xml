@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_blog"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="Blog"/>
+    <item
+        android:id="@+id/nav_contacts"
+        android:icon="@drawable/ic_baseline_local_phone_24"
+        android:title="Contacts"/>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person"
+                android:title="Profile"/>
+            <item
+                android:id="@+id/nav_profile_logout"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="Logout"/>
+            <item
+                android:id="@+id/nav_profile_login"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="Login"/>
+            <item
+                android:id="@+id/nav_profile_register"
+                android:icon="@drawable/ic_register"
+                android:title="Register"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavStyle">
+        <item name="android:textSize">@dimen/md_text_size</item>
+        <item name="android:listPreferredItemHeightSmall">50dp</item>
+    </style>
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/navy_400</item>
+    </style>
+</resources>
