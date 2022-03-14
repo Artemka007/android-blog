@@ -3,7 +3,7 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24"
-    android:tint="#F42424">
+    android:tint="@color/red_500">
   <path
       android:pathData="M7.29168 3.125C4.41564 3.125 2.08334 5.43333 2.08334 8.28125C2.08334 10.5802 2.9948 16.0365 11.9667 21.5521C12.1274 21.6499 12.3119 21.7016 12.5 21.7016C12.6881 21.7016 12.8726 21.6499 13.0333 21.5521C22.0052 16.0365 22.9167 10.5802 22.9167 8.28125C22.9167 5.43333 20.5844 3.125 17.7083 3.125C14.8323 3.125 12.5 6.25 12.5 6.25C12.5 6.25 10.1677 3.125 7.29168 3.125Z"
       android:strokeColor="@color/black" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
