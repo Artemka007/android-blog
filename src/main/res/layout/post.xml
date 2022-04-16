@@ -9,8 +9,6 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,13 +51,13 @@
                 android:orientation="horizontal"
                 android:layout_marginRight="@dimen/lg_margin">
 
-                <TextView
+                <Button
                     android:id="@+id/post_likes"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginRight="@dimen/sm_margin"
                     android:background="@drawable/ic_heart_24"
-                    android:backgroundTint="@color/red_500" />
+                    app:backgroundTint="@color/red_500" />
 
 
                 <TextView
@@ -81,8 +79,9 @@
                     android:id="@+id/post_comments"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/sm_margin"
                     android:background="@drawable/ic_comment_24"
-                    android:layout_marginRight="@dimen/sm_margin"/>
+                    app:backgroundTint="@color/navy_400" />
 
 
                 <TextView

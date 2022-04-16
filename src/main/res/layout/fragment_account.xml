@@ -5,6 +5,11 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".account.ui.AccountFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -59,23 +64,40 @@
 
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
-            android:id="@+id/profile_posts"
+        <RelativeLayout
+            android:id="@+id/post_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_margin="@dimen/md_margin"
             android:layout_below="@id/profile_information">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/posts_list"
+            <EditText
+                android:id="@+id/post_form_field"
                 android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/post_form_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/md_margin"
+                android:hint="@string/send_post"/>
+            <Button
+                android:id="@+id/post_form_btn"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                android:text="@string/submit"
+                android:layout_below="@id/post_form_field"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
 
-        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/posts_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_form"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ProgressBar
             android:id="@+id/profile_loader"
@@ -87,5 +109,6 @@
             android:theme="@style/CircularProgress" />
 
     </RelativeLayout>
+</ScrollView>
 
 </FrameLayout>
